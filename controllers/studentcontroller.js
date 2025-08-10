@@ -1,18 +1,18 @@
 import Student from "../models/student.js"
 
-export function getStudents(req,res){
-        Student.find()
-		.then((students)=> {
-            console.log(req.body)
-			res.json(students)
+// export function getStudents(req,res){
+//         Student.find()
+// 		.then((students)=> {
+//             console.log(req.body)
+// 			res.json(students)
 		
-        }).catch(()=> {
-			res.json({
-				message: "Failed to fetch students",
-			})
-		})
+//         }).catch(()=> {
+// 			res.json({
+// 				message: "Failed to fetch students",
+// 			})
+// 		})
 
-    }
+//     }
 
 
     export function createStudents(req,res){
